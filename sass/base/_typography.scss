@@ -1,0 +1,57 @@
+
+.heading-primary {
+
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    backface-visibility: hidden;
+    margin-bottom: 6.5rem;
+
+    &--main {
+        font-size: 6.75rem;
+        font-weight: 400;
+        letter-spacing: 2.1875rem;
+        display: block;
+        animation-name: FadeIn;
+        animation-duration: 3s;
+    }
+
+    &--sub {
+        font-size: $default-font-size;
+        font-weight: 400;
+        letter-spacing: 1rem;
+        display: block;
+        animation-name: FadeIn;
+        animation-duration: 4s;
+    }
+}
+.heading-secondary {
+  transition:all .3s ease-in-out;
+
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark );
+  display: inline-block;
+  -webkit-background-clip:text;
+  color: transparent;
+  letter-spacing: 2px;
+  text-shadow: .5rem .5rem 1rem rgba($color-black, .2);
+  &:hover{
+  transform: translateY(-1px);
+  }
+
+}
+
+.heading-tertiary{
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph{
+
+  font-size: $default-font-size;
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}
