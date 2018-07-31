@@ -1,8 +1,10 @@
 .footer{
   background-color:#333;
-  padding: 8rem 0;
+  padding: 5rem 0;
   font-size: 1.2rem;
-
+  @include respond(tab-port){
+    padding: 5rem 0;
+  }
   &__logo{
     width: 15rem;
     height: auto;
@@ -21,6 +23,11 @@
     border-top: 1px solid #eee;
     padding-top: 2rem;
     display: inline-block;
+    @include respond(tab-port){
+      padding: 5rem 0;
+      width: 100%;
+      text-align: center;
+    }
   }
   &__list{
     list-style: none;
@@ -53,6 +60,9 @@
     border-top: 1px solid #eee;
     padding-top: 2rem;
     display: inline-block;
+    width: 90%;
+    margin: 0 auto;
   }
+
 
 }

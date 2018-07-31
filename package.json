@@ -9,6 +9,7 @@
   "author": "Joe",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.24.6",
     "node-sass": "^4.9.2"
   },
   "dependencies": {

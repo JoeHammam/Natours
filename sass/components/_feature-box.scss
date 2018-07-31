@@ -6,6 +6,16 @@
   text-align: center;
   box-shadow: 0 1rem 3.5rem rgba($color-black, .5);
   height: 32rem;
+@include respond(phone){
+  width: 75%;
+  height: 32rem;
+
+  margin:0 auto;
+  background-color: #fff;
+  &:hover{
+    background-color: #fff;
+  }
+}
   transition: all .3s;
   &:hover{
     transform:translateY(-1.5rem) scale(1.03) ;
@@ -19,6 +29,9 @@
     background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark );
     -webkit-background-clip:text;
     color: transparent;
+    @include respond(tab-port){
+      margin-bottom: 0;
+    };
 
   }
   &__heading{
